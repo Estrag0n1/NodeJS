@@ -1,3 +1,5 @@
+import bcrypt from 'bcrypt'
+
 const signUp = async () => {
     let email = document.querySelector('input[name="email"]').value
     let pseudo = document.querySelector('input[name="pseudo"]').value

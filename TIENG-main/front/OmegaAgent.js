@@ -8,7 +8,10 @@ fetch(`http://localhost:3000/agents/${id}`)
         agent.innerHTML = `
         <small>${data.id}</small>
 
-        <h1>${data.name}</h1>
+        <h1>Pseudo : ${data.name}</h1>
+        <h3>Age : ${data.age}</h3>
+        <h3>Favourtite card : ${data.card}</h3>
+
         <a href="PageOtherUser.html">Back</a>
         <a href="rename.html?id=${data.id}">Rename</a>
         <button onclick="deleteAgent()">Delete</button>

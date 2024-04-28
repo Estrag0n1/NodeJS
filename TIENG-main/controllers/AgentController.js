@@ -39,13 +39,16 @@ const getAgent = (req, res) => {
 }
 
 const createAgent = (req, res) => {
-  let agent = req.body
-  console.log(agent)
+  /**let agent = req.body**/
+  let {name, age} = req.body
+  console.log(name, age, card)
 
   prisma.agent
       .create({
         data:{
           name:agent.name,
+          age : agent.age,
+          card : agent.card
 
 
         },

@@ -20,6 +20,8 @@ model Agent {
 
   age       Int @default(21)
 
+  card      String
+
   CreatedAt DateTime @default(now())
 
   updateAt DateTime @updatedAt

@@ -9,31 +9,45 @@
 		<title>Document</title>
         <link rel="stylesheet" href="style_css.css">
 	</head>
-	<body>
+	<body class="light">
+        <header class="header">
+            <img class="LogoHP" src="Images/LogoHP.png" alt="Logo">
+            <p class="titre" id="title">Hogwart's carts</p>
+        </header>
         <form>
-            <label for="email">Email</label>
-            <input
-                type="email"
+            <div class="connexion">
+                <label for="email">Email</label>
+                <input
+                    type="email"
 
-                name="email"
+                    name="email"
 
-            />
+                />
+                <br>
+                <br>
 
-            <label for="password">Password</label>
-            <input
-            type="password"
+                <label for="password">Password</label>
+                <input
+                type="password"
 
-            name="password"
-            />
+                name="password"
+                />
 
-            <button
-                type="button"
+                <br>
+                <br>
 
-                onclick="logIn()">
-                Log In
-            </button>
+                <button
+                    type="button"
 
+                    onclick="logIn()">
+                    Log In
+                </button>
+            </div>
+            <br>
+            <br>
+            <br>
 
+            <a href="pageConnexion.html">back</a>
         </form>
 
 	</body>

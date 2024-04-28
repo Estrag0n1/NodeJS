@@ -9,41 +9,61 @@
 		<title>Document</title>
         <link rel="stylesheet" href="style_css.css">
 	</head>
-	<body>
+	    <body class="light">
+        <!--Header qui contient le titre du site, le bouton pour passer d'un mode à l'autre et les différentes catégories-->
+        <header class="header">
+            <img class="LogoHP" src="Images/LogoHP.png" alt="Logo">
+            <p class="titre" id="title">Hogwart's carts</p>
+        </header>
+                
         <form>
-            <label for="email">Email</label>
-            <input
-                type="email"
+            <div class="connexion">
+                <label for="email">Email</label>
+                <input
+                    type="email"
 
-                name="email"
+                    name="email"
 
-            />
+                /><br>
+                <br>
+                <br>
 
-            <label for="pseudo">Pseudo</label>
-            <input
-            type="text"
+                <label for="pseudo">Pseudo</label>
+                <input
+                type="text"
 
-            name="pseudo"
+                name="pseudo"
 
-            />
+                /><br>
+                <br>
+                <br>
 
-            <label for="password">Password</label>
-            <input
-            type="password"
+                <label for="password">Password</label>
+                <input
+                type="password"
 
-            name="password"
-            />
+                name="password"
+                />
+                <br>
+                <br>
 
-            <button
-                type="button"
+                <button
+                    type="button"
 
-                onclick="signUp()"
-            >
-                Sign Up
-            </button>
-
-
+                    onclick="signUp()"
+                >
+                    Sign Up
+                </button>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+            <a href="pageConnexion.html">back</a>
         </form>
 	</body>
     <script src="Signup.js"></script>
 </html>
+
+
+

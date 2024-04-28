@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken'
 
 const prisma = new PrismaClient()
 
+
 const signUp = async (req,res) => {
 
     const {email, pseudo, password } = req.body
