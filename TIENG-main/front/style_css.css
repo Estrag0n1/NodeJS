@@ -1,0 +1,248 @@
+/*.red{
+    color : red
+}
+body{
+    background-color: white;
+    color: black;
+}
+*/
+
+
+
+/*Mise en page des images importees de API */
+.imageImportee{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    min-width: 50px;
+    max-width: 200px;
+}
+/*
+.toutesCartes{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    min-width: 50px;
+    max-width: 200px;
+}
+*/
+.imageImportee_swiper{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    min-width: 50px;
+    max-width: 200px;
+
+}
+
+/*mise en page*/
+.LogoHP{
+    height: 75px;
+    width: auto;
+    display: flex;
+    margin-top: 15px;
+}
+ul{
+    list-style-type:none;
+}
+li{
+    margin: 15px;
+    margin-left: 15%;
+    display: flex;
+}
+
+
+.titre{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+}
+
+.flex_menu{
+    display: flex;
+    justify-content: center;
+}
+
+.desactive{
+    display: none;
+}
+/*
+.Texte{
+    text-align: center;
+    color: rgb(47, 47, 47);
+    background-color:rgb(205, 205, 205) ;
+}
+.dark #TexteDessusSwiper{
+    text-align: center;
+    color: rgb(205, 205, 205);
+    background-color:rgb(47, 47, 47) ;
+}
+*/
+
+/*Ce qui permet de gérer le dark/light mode du texte juste au dessus du swiper*/
+.Texte {
+    text-align: center;
+    margin: 10px;
+}
+
+.light #gestion_index {
+    color: rgb(47, 47, 47);
+    background-color: rgb(205, 205, 205);
+
+}
+
+.dark #gestion_index {
+    color: rgb(205, 205, 205);
+    background-color: rgb(47, 47, 47);
+}
+
+.dark_mode .Texte {
+    color: rgb(205, 205, 205);
+    background-color:rgb(47, 47, 47) ;
+}
+
+.dark_mode_text {
+    color: rgb(205, 205, 205);
+}
+
+
+.descriptionUnivers{
+    text-align: center;
+}
+
+/*Menu*/
+
+.light {
+    background-color: rgb(205, 205, 205);
+    color: rgb(47, 47, 47);
+}
+.dark_mode{
+    background-color: rgb(47, 47, 47);
+    color: rgb(205, 205, 205);
+}
+
+.menu_on{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+/*s'occupe des tabs*/
+
+.tablink {
+    background-color: transparent;
+    color: rgb(6, 162, 201);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    
+}
+
+/* Gère le tab quand c'est actif */
+.tablink.active {
+    background-color: #ddd;
+}
+
+/* s'occupe le style des tab */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Gere quand le tab est actif*/
+.tabcontent.active {
+    display: block;
+    
+}
+/*S'occupe de la mise en page de l'affichage des autres user (oui je sais on peut les modifier voir les supprimer)*/
+.otherUserMisePage{
+    text-align: center;
+}
+
+/*Permet de faire en sorte que la liste dans le footer soit alignee horizontalement*/
+.footerInfo li{
+    display: inline-block;
+}
+
+#boutonTab{
+    color: 00B9E8;
+}
+/*s'occupe de la mise en page de l'interface pour se connecter*/
+.connexion{
+    background-color: rgb(173, 163, 26);
+    text-align: center;
+    max-width: 650px;
+    min-width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+.link_to_node li{
+    display: inline-block;
+}
+
+/*s'occupe des couleurs des liens à différentes fases (cliqué, quand la souris est dessus et de base)*/
+a:link{
+    color: rgb(6, 162, 201);
+}
+
+a:visited{
+    color: rgb(6, 162, 201);
+}
+
+a:hover{
+    color: rgb(6, 201, 52);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*Swiper*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.flex_menu{
+    display: flex;
+}
+body {    
+    position: relative;
+    height: 100%;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 24px; /* change la taille du texte qui n'est pas dans les slides*/
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 50px; /* change la taille du texte qui est dans les slides mais pas la taille des slides*/
+    background: #fff; /*change la couleur des slides*/
+    display: flex;
+    height: 300px; /*permet d'augmenter la taille des slides (hauteur) */
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide_img {
+    display:block;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p{ /* permet de faire en sorte que le texte sur les slides (et autres p) soit éloignés à gauche*/
+    margin-left: 15px;
+}
+

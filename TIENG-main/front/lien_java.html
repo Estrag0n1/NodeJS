@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style_css.css">
+    </head>
+
+    <!--Tout le site est en anglais car l'API est en anglais (c'est pour éviter que certains éléments soient en 
+        anglais et que d'autres soient en français), c'est pour garder une unité dans tout le site.-->
+
+
+    <body class="light">
+        <!--Header qui contient le titre du site, le bouton pour passer d'un mode à l'autre et les différentes catégories-->
+        <header class="header">
+            <img class="LogoHP" src="Images/LogoHP.png" alt="Logo">
+            <p class="titre" id="title">Hogwart's carts</p>
+            <div class="link_to_node">
+                <ul>
+                    <li><a href="pageConnexion.html"Connexion>Log in</a></li>
+                    <li><a href="lien_java.html"Home>Home</a></li>
+                    <li><a href="PageOtherUser.html"OtherUser>Others profiles</a></li>
+                </ul>
+            </div>
+            <!--<img src="img.imm.webp" alt="IIM Digital School" id="image">-->
+            <button type="button" id="bouton" class="light">Change mode</button> <!--permet de switcher entre les deux mode light/dark-->
+                
+            <!--<ul class="flex_menu">
+                <li class="tab1" id="li_1">
+                    <p>Beauce</p>
+                </li>
+                <li class="tab2" id="li_2">
+                    <p>Normandie</p>
+                </li>
+                <li class="tab3" id="li_3">
+                    <p>Perigord</p>
+                </li>
+            </ul>-->
+            <!--Bouton pour passer d'une section à l'autre-->
+        </header>
+
+        <div class="tabs">
+            <button class="tablink tab4" onclick="openPage('Menu', this)" id="defaultOpen">Menu</button>
+            <button class="tablink tab1" id="boutonTab2">My Cards</button>
+            <button class="tablink tab2" id="boutonTab3">All Cards</button>
+            <button class="tablink tab3" id="boutonTab4">Discover the univers</button>
+        </div>
+        <!--Tabs-->
+        <div id="tab1" class="tabcontent">
+            <h3>My collection</h3>
+            <p>This are all your cards</p>
+            <div id="sorciersCollection"></div>
+        </div>
+    
+        <div id="tab2" class="tabcontent">
+            <h3>All Cards</h3>
+            <p>This are all cards of the game</p>
+            <div id="sorciers"></div>
+        </div>
+    
+        <div id="tab3" class="tabcontent">
+            <h3>The univers of Harry Potter</h3>
+            <p>Come and discover the univers of Harry Potter !</p>
+            <br>
+            <br>
+            <br>
+            <p class="descriptionUnivers">In Hogwart, there are four Houses.Gryffindor, Hufflepuff, Ravenclaw, and Slytherin. <br>
+                In the first day of school, students are separed through each House. <br>
+                At the end of the year, the House with the most points is awarded the House Cup, one of the greatest honour.</p>
+        </div>
+        <!--Tabs menu qui contient la page d'acceuil mais qui ne se lance pas dès que le site s'ouvre (à régler)-->
+        <div id="tab4" class="tabcontent">
+            <!--Main qui sert de page d'acceuil (menu)-->
+            <main class="light" id="gestion_index">
+                <div class="menu_on" id="menu">
+                    <h2 class="Texte" id="TexteDessusSwiper">Players' favorite cards!</h2>
+                </div>
+                <br>
+                <br>
+                <!--Div qui contient le Swiper avec les slides (nom des personnages + images)-->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div id="sorciers_swiper"></div><p>Harry Potter</p></div> <!--slide 1 avec image et texte-->
+                        <div class="swiper-slide"> <div id="sorciers_swiper2"></div><p>Lord Voldemort</p></div>
+                        <div class="swiper-slide"> <div id="sorciers_swiper3"></div> <p>Hermione Granger</p></div>
+                    </div>
+                    <div class="swiper-button-next"></div> <!--Affiche la flèche pour aller à la slide suivante-->
+                    <div class="swiper-button-prev"></div> <!--même chose mais avec slide précédente-->
+                </div>
+
+                <!-- <div class="flex_box" alt="photo1">
+                        <img src="3.png">
+                    </div>-->
+
+                <!--</div>-->
+            </main>
+
+        <p>Welcome at Hogwart's carts ! A place full of magie and strange creatures !</p>
+
+
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footerInfo">
+            <ul>
+                <li>
+                    About us
+                </li>
+                <li>
+                    Legals
+                </li>
+                <li>
+                    Privacy & Cookies
+                </li>
+            </ul>
+        </footer>
+        <!--Jonction entre les différents java + swiper-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--va chercher swiper-->
+        <script src="main_site.js"></script> <!--lien avec le java-->
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
